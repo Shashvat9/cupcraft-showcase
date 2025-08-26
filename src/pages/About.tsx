@@ -1,6 +1,9 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, User } from "lucide-react";
+import rahulPhoto from '@/assets/rahul.jpg';
+import rudraPhoto from '@/assets/rudra.jpg';
+import arjunPhoto from '@/assets/arjun.jpg';
 
 const About = () => {
 
@@ -12,17 +15,20 @@ const About = () => {
     {
       name: "Rahul Purushvani",
       position: "Partner",
-      phone: "+91 7777986474"
+      phone: "+91 7777986474",
+      photo: rahulPhoto
     },
     {
       name: "Rudra Mehta", 
       position: "Partner",
-      phone: "+91 6353790165"
+      phone: "+91 6353790165",
+      photo: rudraPhoto
     },
     {
       name: "Arjun Bhatti",
       position: "Partner", 
-      phone: "+91 8141964666"
+      phone: "+91 8141964666",
+      photo: arjunPhoto
     }
   ];
 
@@ -109,9 +115,12 @@ const About = () => {
             {team.map((member, index) => (
               <Card key={index} className="shadow-soft text-center">
                 <CardHeader>
-                  <div className="mx-auto w-20 h-20 bg-accent rounded-full flex items-center justify-center mb-4">
-                    <User className="h-10 w-10 text-primary" />
-                  </div>
+                  {/* 3. Replace the User icon with an img tag */}
+                  <img 
+                    src={member.photo} 
+                    alt={`Photo of ${member.name}`}
+                    className="mx-auto w-24 h-24 rounded-full object-cover mb-4"
+                  />
                   <CardTitle className="text-xl">{member.name}</CardTitle>
                   <CardDescription className="text-primary font-semibold">
                     {member.position}

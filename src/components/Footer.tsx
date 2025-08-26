@@ -45,10 +45,19 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center">
-          <p className="text-primary-foreground/80">
-            © 2025 Eco Edge. All rights reserved.
-          </p>
+        <hr className="my-6 border-border" />
+
+        <div className="text-center mb-4">
+          <h4 className="font-semibold text-white mb-2">Our Certifications</h4>
+          <div className="flex justify-center items-center gap-x-6 text-sm text-white">
+            <span>BRCS</span>
+            <span className="border-l border-border h-4"></span>
+            <span>ISO 9001:2015</span>
+          </div>
+        </div>
+
+        <div className="text-center text-sm text-muted-white">
+          © {new Date().getFullYear()} Eco Edge. All Rights Reserved.
         </div>
       </div>
     </footer>

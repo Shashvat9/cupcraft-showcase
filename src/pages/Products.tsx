@@ -109,7 +109,7 @@ const Products = () => {
       name: "Private Prints",
       description: "Showcase your brand with our custom printed cups, turning every cup into a marketing opportunity.",
       image: privateprints,
-      sizes: ["test"], //ask for sizes
+      sizes: ["All Sizes"], //ask for sizes
       features: [
         "Custom logo and design printing",
         "High-quality print finish",
