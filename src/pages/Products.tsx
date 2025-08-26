@@ -1,8 +1,8 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import doublewallcups from "@/assets/doublewallcups.jpg";
-import singlewalledcup from "@/assets/singlewalledcup.jpg";
-import ripplewallcups from "@/assets/ripplewallcups.jpeg";
+import doublewallcups from "@/assets/doublewallcups.png";
+import singlewalledcup from "@/assets/singlewalledcup.png";
+import ripplewallcups from "@/assets/ripplewallcups.png";
 
 const Products = () => {
   const products = [
