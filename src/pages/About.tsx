@@ -3,6 +3,29 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, User } from "lucide-react";
 
 const About = () => {
+  const team = [
+    {
+      name: "John Smith",
+      position: "Founder & CEO",
+      description: "20+ years in manufacturing industry, leading our vision for sustainable paper cup production.",
+      email: "john.smith@ecoage.com",
+      phone: "+1 (555) 123-4567"
+    },
+    {
+      name: "Sarah Johnson", 
+      position: "Operations Partner",
+      description: "Expert in supply chain management and quality control, ensuring consistent product excellence.",
+      email: "sarah.johnson@ecoage.com",
+      phone: "+1 (555) 234-5678"
+    },
+    {
+      name: "Michael Chen",
+      position: "Sales Partner", 
+      description: "Dedicated to building lasting relationships with our clients and expanding our market reach.",
+      email: "michael.chen@ecoage.com",
+      phone: "+1 (555) 345-6789"
+    }
+  ];
 
   return (
     <div className="min-h-screen py-12">
@@ -78,39 +101,40 @@ const About = () => {
           </div>
         </div>
 
-        {/* Contact Details */}
+        {/* Team Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-foreground text-center mb-12">
-            Contact Details
+            Meet Our Team
           </h2>
-          <div className="max-w-2xl mx-auto">
-            <Card className="shadow-soft text-center">
-              <CardHeader>
-                <div className="mx-auto w-20 h-20 bg-accent rounded-full flex items-center justify-center mb-4">
-                  <User className="h-10 w-10 text-primary" />
-                </div>
-                <CardTitle className="text-2xl">Rahul Purushvani</CardTitle>
-                <CardDescription className="text-primary font-semibold">
-                  Owner & Managing Director
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-3 pt-4">
-                  <div className="flex items-center justify-center space-x-3 text-muted-foreground">
-                    <Phone className="h-5 w-5" />
-                    <span className="text-lg">+91 7777986474</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {team.map((member, index) => (
+              <Card key={index} className="shadow-soft text-center">
+                <CardHeader>
+                  <div className="mx-auto w-20 h-20 bg-accent rounded-full flex items-center justify-center mb-4">
+                    <User className="h-10 w-10 text-primary" />
                   </div>
-                  <div className="flex items-center justify-center space-x-3 text-muted-foreground">
-                    <Mail className="h-5 w-5" />
-                    <span>ecoedge2025@gmail.com</span>
+                  <CardTitle className="text-xl">{member.name}</CardTitle>
+                  <CardDescription className="text-primary font-semibold">
+                    {member.position}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground">
+                    {member.description}
+                  </p>
+                  <div className="space-y-2 pt-4 border-t border-border">
+                    <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
+                      <Mail className="h-4 w-4" />
+                      <span>{member.email}</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
+                      <Phone className="h-4 w-4" />
+                      <span>{member.phone}</span>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-center space-x-3 text-muted-foreground">
-                    <Mail className="h-5 w-5" />
-                    <span>rahulpurushvani77@gmail.com</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
 
@@ -129,7 +153,7 @@ const About = () => {
                 <Phone className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="text-primary-foreground/90">+91 7777986474</p>
+              <p className="text-primary-foreground/90">+1 (555) 123-4567</p>
             </div>
             
             <div className="text-center">
@@ -137,7 +161,7 @@ const About = () => {
                 <Mail className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-primary-foreground/90">ecoedge2025@gmail.com</p>
+              <p className="text-primary-foreground/90">info@ecoage.com</p>
             </div>
             
             <div className="text-center">
