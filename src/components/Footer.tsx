@@ -17,17 +17,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Information</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary-foreground/80" />
-                <span className="text-primary-foreground/80">+1 (555) 123-4567</span>
-              </div>
-              <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary-foreground/80" />
-                <span className="text-primary-foreground/80">info@ecoage.com</span>
+                <span className="text-primary-foreground/80">ecoedge2025@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-primary-foreground/80" />
                 <span className="text-primary-foreground/80">
-                  123 Industrial Ave, Manufacturing District
+                  Plot No 23, Behind Garibshapir Dargha, G.I.D.C Phase 3, Sihor, Gujarat 364240
                 </span>
               </div>
             </div>

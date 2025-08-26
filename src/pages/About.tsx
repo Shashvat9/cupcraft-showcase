@@ -5,25 +5,19 @@ import { Mail, Phone, MapPin, User } from "lucide-react";
 const About = () => {
   const team = [
     {
-      name: "John Smith",
-      position: "Founder & CEO",
-      description: "20+ years in manufacturing industry, leading our vision for sustainable paper cup production.",
-      email: "john.smith@ecoage.com",
-      phone: "+1 (555) 123-4567"
+      name: "Rahul Purushvani",
+      position: "Partner",
+      phone: "+91 7777986474"
     },
     {
-      name: "Sarah Johnson", 
-      position: "Operations Partner",
-      description: "Expert in supply chain management and quality control, ensuring consistent product excellence.",
-      email: "sarah.johnson@ecoage.com",
-      phone: "+1 (555) 234-5678"
+      name: "Rudra Mehta", 
+      position: "Partner",
+      phone: "+91 6353790165"
     },
     {
-      name: "Michael Chen",
-      position: "Sales Partner", 
-      description: "Dedicated to building lasting relationships with our clients and expanding our market reach.",
-      email: "michael.chen@ecoage.com",
-      phone: "+1 (555) 345-6789"
+      name: "Arjun Bhatti",
+      position: "Partner", 
+      phone: "+91 8141964666"
     }
   ];
 
@@ -119,14 +113,7 @@ const About = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    {member.description}
-                  </p>
-                  <div className="space-y-2 pt-4 border-t border-border">
-                    <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
-                      <Mail className="h-4 w-4" />
-                      <span>{member.email}</span>
-                    </div>
+                  <div className="pt-4">
                     <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
                       <Phone className="h-4 w-4" />
                       <span>{member.phone}</span>
@@ -147,21 +134,13 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div className="text-center">
-              <div className="mx-auto w-16 h-16 bg-primary-foreground/10 rounded-full flex items-center justify-center mb-4">
-                <Phone className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="text-primary-foreground/90">+1 (555) 123-4567</p>
-            </div>
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div className="text-center">
               <div className="mx-auto w-16 h-16 bg-primary-foreground/10 rounded-full flex items-center justify-center mb-4">
                 <Mail className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-primary-foreground/90">info@ecoage.com</p>
+              <p className="text-primary-foreground/90">ecoedge2025@gmail.com</p>
             </div>
             
             <div className="text-center">
@@ -170,10 +149,18 @@ const About = () => {
               </div>
               <h3 className="font-semibold mb-2">Address</h3>
               <p className="text-primary-foreground/90">
-                123 Industrial Ave<br />
-                Manufacturing District
+                Plot No 23, Behind Garibshapir Dargha,<br />
+                G.I.D.C Phase 3, Bhavnagar Rajkot Road,<br />
+                Sihor, District - Bhavnagar,<br />
+                State - Gujarat, Pin 364240
               </p>
             </div>
+          </div>
+          
+          <div className="text-center mb-8">
+            <p className="text-primary-foreground/90">
+              <strong>GST No:</strong> 24AAMFE0737E1ZQ
+            </p>
           </div>
           
           <div className="text-center">
