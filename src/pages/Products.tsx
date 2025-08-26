@@ -3,6 +3,12 @@ import { Badge } from "@/components/ui/badge";
 import doublewallcups from "@/assets/doublewallcups.png";
 import singlewalledcup from "@/assets/singlewalledcup.png";
 import ripplewallcups from "@/assets/ripplewallcups.png";
+import vendingcups from "@/assets/vendingcups.png";
+import accessorieslid from "@/assets/accessorieslid.png";
+import compostablecups from "@/assets/compostablecups.png";
+import platesbowls from "@/assets/platesbowls.png";
+import cutlery from "@/assets/cutlery.png";
+import privateprints from "@/assets/privateprints.png";
 
 const Products = () => {
   const products = [
@@ -35,13 +41,82 @@ const Products = () => {
     },
     // {
     //   id: 4,
-    //   name: "Large Paper Cups",
-    //   description: "Great for large beverages, smoothies, and take-away drinks",
-    //   image: largeCups,
-    //   sizes: ["200ml"],
-    //   features: [""],
-    //   applications: ["Fast food", "Smoothie bars", "Convenience stores"]
-    // }
+    //   name: "Vending Cups",
+    //   description: "Specifically designed for vending machines and high-traffic areas",
+    //   image: vendingcups,
+    //   sizes: ["test"], // ask for sizes
+    //   features: [
+    //     "Consistent dispensing",
+    //     "Food safe material",
+    //     "Leak-proof"
+    //   ],
+    //   applications: ["Vending machines", "Office pantries", "Public spaces"]
+    // },
+    {
+      id: 5,
+      name: "Lid",
+      description: "Wide range of lids to complement our paper cups",
+      image: accessorieslid,
+      sizes: ["4oz to 16oz"], //ask for sizes
+      features: [
+        "Variety of lid options",
+        "Eco-friendly materials",
+        "Secure fit"
+      ],
+      applications: ["All cup types", "Outdoor events", "Catering services"]
+    },
+    // {
+    //   id: 6,
+    //   name: "Compostable Cups",
+    //   description: "Eco-friendly cups made from compostable materials",
+    //   image: compostablecups,
+    //   sizes: ["test"], //ask for sizes
+    //   features: [
+    //     "Made from renewable resources",
+    //     "Breaks down in composting conditions",
+    //     "Certified compostable"
+    //   ],
+    //   applications: ["Eco-conscious businesses", "Events", "Cafes"]
+    // },
+    {
+      id: 7,
+      name: "Plates and Bowls",
+      description: "Sturdy and versatile, perfect for serving a wide range of foods at events, parties, and for take-away services.",
+      image: platesbowls,
+      sizes: ["6\"","9\"","12\"","up to 12oz"], //ask for sizes
+      features: [
+        "Durable and sturdy",
+        "Variety of sizes and shapes",
+        "Eco-friendly materials"
+      ],
+      applications: ["Parties", "Catering", "Take-away services"]
+    },
+    {
+      id: 8,
+      name: "Cutlery",
+      description: "Eco-friendly cutlery options including forks, knives, and spoons made from sustainable materials.",
+      image: cutlery,
+      sizes: ["All Regular Sizes","Customised Sizes Available"], //ask for sizes
+      features: [
+        "Biodegradable and compostable",
+        "Durable for various food types",
+        "Food safe materials"
+      ],
+      applications: ["Restaurants", "Catering", "Outdoor events"]
+    },
+    {
+      id: 9,
+      name: "Private Prints",
+      description: "Showcase your brand with our custom printed cups, turning every cup into a marketing opportunity.",
+      image: privateprints,
+      sizes: ["test"], //ask for sizes
+      features: [
+        "Custom logo and design printing",
+        "High-quality print finish",
+        "Available on all cup types"
+      ],
+      applications: ["Brand promotion", "Events", "Cafes and restaurants"]
+    }
   ];
 
   return (
