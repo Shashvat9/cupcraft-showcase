@@ -1,35 +1,35 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import cupsVariety from "@/assets/cups-variety.jpg";
-import smallCups from "@/assets/small-cups.jpg";
-import largeCups from "@/assets/large-cups.jpg";
+import doublewallcups from "@/assets/doublewallcups.jpg";
+import singlewalledcup from "@/assets/singlewalledcup.jpg";
+import ripplewallcups from "@/assets/ripplewallcups.jpeg";
 
 const Products = () => {
   const products = [
     {
       id: 1,
-      name: "Small Paper Cups",
-      description: "Perfect for espresso, small coffee servings, and sampling",
-      image: smallCups,
-      sizes: ["40ml"],
+      name: "Single Wall Paper Cups",
+      description: "Perfect for Hot and cold beverages ",
+      image: singlewalledcup,
+      sizes: ["1 oz","3 oz","4 oz","6 oz","8 oz","10 oz","12 oz","16 oz"], // 1,3,4,6,8,10,12,16  oz
       features: ["Heat resistant", "Food grade", "Leak-proof"],
-      applications: ["Coffee shops", "Restaurants", "Catering"]
+      applications: ["Coffee shops","Restaurants","Catering" ]
     },
     {
       id: 2,
-      name: "Medium Paper Cups", 
+      name: "Double Wall Paper Cups", 
       description: "Ideal for regular coffee, tea, and cold beverages",
-      image: cupsVariety,
-      sizes: ["55ml","65ml"],
+      image: doublewallcups,
+      sizes: ["6 oz","8 oz","10 oz","12 oz","16 oz"], // 6,8,10,12,16  oz
       features: ["Double wall option", "Custom printing available", "Biodegradable"],
       applications: ["Offices", "Cafes", "Events"]
     },
     {
       id: 3,
-      name: "Large Paper Cups",
+      name: "Ripple Paper Cups", // change photo of ripple cups
       description: "Great for large beverages, smoothies, and take-away drinks",
-      image: largeCups,
-      sizes: ["200ml"],
+      image: ripplewallcups,
+      sizes: ["4 oz","6 oz","8 oz","10 oz","12 oz"], //4,6,8,10,12  oz
       features: ["Extra strong", "Insulated options", "Wide rim design"],
       applications: ["Fast food", "Smoothie bars", "Convenience stores"]
     },
