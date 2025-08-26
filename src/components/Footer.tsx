@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">EcoCups Manufacturing</h3>
+            <h3 className="text-xl font-bold mb-4">ecoage</h3>
             <p className="text-primary-foreground/80 mb-4">
               Leading manufacturer of high-quality disposable paper cups. 
               Committed to sustainability and excellence in every product.
@@ -22,7 +22,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary-foreground/80" />
-                <span className="text-primary-foreground/80">info@ecocups.com</span>
+                <span className="text-primary-foreground/80">info@ecoage.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-primary-foreground/80" />
@@ -51,7 +51,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center">
           <p className="text-primary-foreground/80">
-            © 2024 EcoCups Manufacturing. All rights reserved.
+            © 2024 ecoage. All rights reserved.
           </p>
         </div>
       </div>

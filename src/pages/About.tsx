@@ -8,21 +8,21 @@ const About = () => {
       name: "John Smith",
       position: "Founder & CEO",
       description: "20+ years in manufacturing industry, leading our vision for sustainable paper cup production.",
-      email: "john.smith@ecocups.com",
+      email: "john.smith@ecoage.com",
       phone: "+1 (555) 123-4567"
     },
     {
       name: "Sarah Johnson", 
       position: "Operations Partner",
       description: "Expert in supply chain management and quality control, ensuring consistent product excellence.",
-      email: "sarah.johnson@ecocups.com",
+      email: "sarah.johnson@ecoage.com",
       phone: "+1 (555) 234-5678"
     },
     {
       name: "Michael Chen",
       position: "Sales Partner", 
       description: "Dedicated to building lasting relationships with our clients and expanding our market reach.",
-      email: "michael.chen@ecocups.com",
+      email: "michael.chen@ecoage.com",
       phone: "+1 (555) 345-6789"
     }
   ];
@@ -33,7 +33,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            About EcoCups Manufacturing
+            About ecoage
           </h1>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Founded with a commitment to quality and sustainability, we have grown to become 
@@ -47,7 +47,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                EcoCups Manufacturing was established with a simple yet powerful vision: 
+                ecoage was established with a simple yet powerful vision: 
                 to provide high-quality, eco-friendly paper cups that businesses can rely on. 
                 What started as a small operation has grown into a comprehensive manufacturing 
                 facility serving clients across multiple industries.
@@ -161,7 +161,7 @@ const About = () => {
                 <Mail className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-primary-foreground/90">info@ecocups.com</p>
+              <p className="text-primary-foreground/90">info@ecoage.com</p>
             </div>
             
             <div className="text-center">

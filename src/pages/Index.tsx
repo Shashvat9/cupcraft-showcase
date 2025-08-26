@@ -31,7 +31,7 @@ const Index = () => {
             <div className="relative">
               <img 
                 src={heroImage} 
-                alt="Premium paper cups manufactured by EcoCups"
+                alt="Premium paper cups manufactured by ecoage"
                 className="rounded-lg shadow-soft w-full h-auto"
               />
             </div>
@@ -44,7 +44,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Why Choose EcoCups Manufacturing?
+              Why Choose ecoage?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We deliver quality, reliability, and sustainability in every paper cup we manufacture.
