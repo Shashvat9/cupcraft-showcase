@@ -11,7 +11,7 @@ const Products = () => {
       name: "Small Paper Cups",
       description: "Perfect for espresso, small coffee servings, and sampling",
       image: smallCups,
-      sizes: ["4oz", "6oz", "8oz"],
+      sizes: ["40ml"],
       features: ["Heat resistant", "Food grade", "Leak-proof"],
       applications: ["Coffee shops", "Restaurants", "Catering"]
     },
@@ -20,7 +20,7 @@ const Products = () => {
       name: "Medium Paper Cups", 
       description: "Ideal for regular coffee, tea, and cold beverages",
       image: cupsVariety,
-      sizes: ["10oz", "12oz", "14oz"],
+      sizes: ["55ml","65ml"],
       features: ["Double wall option", "Custom printing available", "Biodegradable"],
       applications: ["Offices", "Cafes", "Events"]
     },
@@ -29,10 +29,19 @@ const Products = () => {
       name: "Large Paper Cups",
       description: "Great for large beverages, smoothies, and take-away drinks",
       image: largeCups,
-      sizes: ["16oz", "20oz", "24oz"],
+      sizes: ["200ml"],
       features: ["Extra strong", "Insulated options", "Wide rim design"],
       applications: ["Fast food", "Smoothie bars", "Convenience stores"]
-    }
+    },
+    // {
+    //   id: 4,
+    //   name: "Large Paper Cups",
+    //   description: "Great for large beverages, smoothies, and take-away drinks",
+    //   image: largeCups,
+    //   sizes: ["200ml"],
+    //   features: [""],
+    //   applications: ["Fast food", "Smoothie bars", "Convenience stores"]
+    // }
   ];
 
   return (
@@ -52,7 +61,7 @@ const Products = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {products.map((product) => (
-            <Card key={product.id} className="shadow-soft hover:shadow-primary transition-shadow duration-300">
+            <Card key={product.id} className="shadow-soft hover:shadow-primary hover:-translate-y-1 hover:scale-105 transition-all duration-300">
               <div className="aspect-square overflow-hidden rounded-t-lg">
                 <img 
                   src={product.image} 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logo from '@/assets/logo.png'; 
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +16,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="text-2xl font-bold text-primary">
-              ecoage
+              { /* Eco Edge */}
+              <img src={logo} alt="Eco Edge Logo" className="h-12 w-auto" />
             </Link>
+
+            {/* </Link> */}
           </div>
           
           {/* Desktop Navigation */}

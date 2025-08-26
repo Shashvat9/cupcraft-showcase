@@ -3,6 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, User } from "lucide-react";
 
 const About = () => {
+
+    const handleRequestQuoteClick = () => {
+    window.location.href = "mailto:ecoedge2025@gmail.com";
+  };
+
   const team = [
     {
       name: "Rahul Purushvani",
@@ -27,7 +32,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            About ecoage
+            About Eco Edge
           </h1>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Founded with a commitment to quality and sustainability, we have grown to become 
@@ -41,7 +46,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                ecoage was established with a simple yet powerful vision: 
+                Eco Edge was established with a simple yet powerful vision: 
                 to provide high-quality, eco-friendly paper cups that businesses can rely on. 
                 What started as a small operation has grown into a comprehensive manufacturing 
                 facility serving clients across multiple industries.
@@ -164,13 +169,12 @@ const About = () => {
           </div>
           
           <div className="text-center">
-            <Button 
-              variant="secondary" 
-              size="lg"
-              className="shadow-soft"
+            <a 
+              href="mailto:ecoedge2025@gmail.com"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-soft"
             >
               Request a Quote
-            </Button>
+            </a>
           </div>
         </div>
       </div>

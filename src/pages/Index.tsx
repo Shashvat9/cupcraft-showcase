@@ -31,7 +31,7 @@ const Index = () => {
             <div className="relative">
               <img 
                 src={heroImage} 
-                alt="Premium paper cups manufactured by ecoage"
+                alt="Premium paper cups manufactured by Eco Edge"
                 className="rounded-lg shadow-soft w-full h-auto"
               />
             </div>
@@ -44,7 +44,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Why Choose ecoage?
+              Why Choose Eco Edge?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We deliver quality, reliability, and sustainability in every paper cup we manufacture.
@@ -52,10 +52,10 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="text-center shadow-soft">
+            <Card className="text-center shadow-soft hover:shadow-primary hover:-translate-y-1 hover:scale-105 transition-all duration-300">
               <CardHeader>
                 <div className="mx-auto w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-4">
-                  <CheckCircle className="h-8 w-8 text-primary" />
+                  <Users className="h-8 w-8 text-primary" />
                 </div>
                 <CardTitle>Quality Assured</CardTitle>
               </CardHeader>
@@ -66,10 +66,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center shadow-soft">
+            <Card className="text-center shadow-soft hover:shadow-primary hover:-translate-y-1 hover:scale-105 transition-all duration-300">
               <CardHeader>
                 <div className="mx-auto w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-4">
-                  <Leaf className="h-8 w-8 text-primary" />
+                  <Users className="h-8 w-8 text-primary" />
                 </div>
                 <CardTitle>Eco-Friendly</CardTitle>
               </CardHeader>
@@ -80,10 +80,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center shadow-soft">
+            <Card className="text-center shadow-soft hover:shadow-primary hover:-translate-y-1 hover:scale-105 transition-all duration-300">
               <CardHeader>
                 <div className="mx-auto w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-4">
-                  <Shield className="h-8 w-8 text-primary" />
+                  <Users className="h-8 w-8 text-primary" />
                 </div>
                 <CardTitle>Reliable Supply</CardTitle>
               </CardHeader>
@@ -94,7 +94,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center shadow-soft">
+            <Card className="text-center shadow-soft hover:shadow-primary hover:-translate-y-1 hover:scale-105 transition-all duration-300">
               <CardHeader>
                 <div className="mx-auto w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-4">
                   <Users className="h-8 w-8 text-primary" />
